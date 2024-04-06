@@ -1,0 +1,266 @@
+html, body {
+	font-family: "Roboto", sans-serif;
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+	padding: 0;
+
+}
+
+a { 
+	text-decoration: none;
+}
+
+header.head {
+	background-color: #9461fb;
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	
+}
+
+header.head .container {
+	display: grid;
+	grid-template-columns:  60px auto;
+	grid-template-areas: "logo docs examples icons themes blogs search icon-github icon-twitter icon-open icon-version";
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	gap: 15px;
+	padding: center;
+}
+
+
+
+header.head .logo {
+	grid-area: logo;		
+}
+
+header.head .docs {
+	grid-area: docs;	
+}
+
+header.head .examples {
+	grid-area: examples;
+}
+
+header.head .icons {
+	grid-area: icons;
+}
+
+header.head .themes {
+	grid-area: themes;
+}
+
+header.head .blogs {
+	grid-area: blogs;
+}
+
+header.head .search {
+	grid-area: search;
+
+}
+
+header.head .icon-github {
+	grid-area: icon-github;
+}
+
+header.head .icon-twitter {
+	grid-area: icon-twitter;
+}
+
+header.head .icon-open {
+	grid-area: icon-open;
+}
+
+header.head .icon-version {
+	grid-area: icon-version;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	background-color: #ffffffd5;
+	margin: 0 auto;
+		
+}
+
+main .container {
+	max-width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 15px 5px;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 150px minmax(800px,auto) 145px;
+	
+}
+
+main .container .filters {
+	display: grid;
+	grid-template-rows: 0.3fr 0.3fr 0.3fr;
+	gap: 2em;
+	
+}
+
+main.get-start {
+	
+}
+
+
+main .container .content-title {
+	font-size: 48px;
+	
+}
+
+main.navigation {
+	
+	
+
+}
+
+main.navigation .container {
+	display: grid;	
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "content";
+}
+
+
+main.navigation .container .content {
+	border-bottom: 5px solid rgb(157, 157, 194);
+	width: 25px auto;
+	
+	
+}
+
+
+@media screen and (max-width: 950px) {
+
+
+
+	header.head  {
+		margin: 0 auto;
+		
+	}
+
+	header.head .container {
+		display: grid;
+        	grid-template-columns: 0.1fr 0.1fr 0.1fr;
+		grid-template-areas: "doc examples icons themes blogs logo github twitter open version";
+        	justify-items: center;
+		justify-content: center;
+		width: 250px;
+	}
+
+	header.head .container .logo {
+		justify-items: center;
+		justify-content: center;
+		grid-area: logo;
+		
+		
+	}
+	header.head .container .docs {
+		font-size: 14px;
+		color: #ffffff65;
+		grid-area: docs;
+	}
+
+	header.head .container .examples {
+		font-size: 14px;
+		color: #ffffff65;
+		grid-area: examples;
+		
+	}
+
+	header.head .container .icons {
+		font-size: 14px;
+		color: #ffffff65;
+		grid-area: icons;
+		
+	}
+
+	header.head .container .themes {
+		font-size: 14px;
+		color: #ffffff65;
+		grid-area: themes;
+		
+	}
+
+	header.head .container .blogs {
+		font-size: 14px;
+		color: #ffffff65;
+		grid-area: blogs;
+		
+	}
+
+	header.head .container .search {
+		display: none;
+	}
+  
+
+	header.head .container .icon-github {
+		font-size: 14px;
+		color: #ffffff65;
+		grid-area: github;
+		
+	}
+
+	header.head .container .icon-twitter {
+		font-size: 14px;
+		color: #ffffff65;
+		grid-area: twitter;
+		
+	}
+
+	header.head .container .icon-open {
+		font-size: 14px;
+		color: #ffffff65;
+		grid-area: open;
+		
+	}
+
+	header.head .container .icon-version {
+		font-size: 14px;
+		color: #ffffff65;
+		grid-area: version;
+	}
+
+	
+	
+	main .container  {
+		max-width: 620px;
+		padding: 30px;
+		gap: 25px;
+		
+	}
+
+	main .container .filters {
+		display: none;
+	}
+
+	main .container .main-content {
+		display: block;
+		font-size: 16px;
+		line-height: 25px;
+		width: 500px;
+		
+	}
+
+	main .container .navigation {
+		display: none;
+		
+	}
+
+	main .container .main-content .content-title {
+		font-size: 32px;
+	}
+
+}
+
+
+
+
